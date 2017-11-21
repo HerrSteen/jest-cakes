@@ -13,7 +13,7 @@ npm install --save-dev jest-cakes
 
 ## Usage
 ```js
-require("../jest-cakes");
+require("jest-cakes");
 
 Scenario("Feature test", () => {
   Given("Data is loaded", (done) => {
