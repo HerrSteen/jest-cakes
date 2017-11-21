@@ -15,18 +15,20 @@ npm install --save-dev jest-cakes
 ```
 require("../jest-cakes");
 
-//Use any of the functions to describe your test
-Scenario("First scenario", () => {
+Scenario("Feature test", () => {
   Given("Data is loaded", (done) => {
     done();
   });
-  
-  When("We request site", () => {
+
+  When("Site is requested", () => {
     //do something..
   });
 
   Then("We get expected result", () => {
     //expect(..).toBe(..);
+  });
+
+  And.skip("Do this later", () => {
   });
 });
 ```
