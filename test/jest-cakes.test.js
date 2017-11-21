@@ -2,13 +2,13 @@ require("../jest-cakes");
 
 Feature("jest-cakes", () => {
   Scenario("Test functions are available in global scope", () => {
-    let incement;
+    let increment;
 
     given("increment is set", () => {
       increment = 0
     });
 
-    When("incement is increased", () => {
+    When("increment is increased", () => {
       increment++;
     });
 
