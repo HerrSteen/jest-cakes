@@ -4,7 +4,7 @@ Feature("jest-cakes", () => {
   Scenario("Test functions are available in global scope", () => {
     let incement;
 
-    Given("increment is set", () => {
+    given("increment is set", () => {
       increment = 0
     });
 

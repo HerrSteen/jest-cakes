@@ -19,7 +19,7 @@ const tests = [
 
 const createFn = (testFn, arr, separator) => {
   arr.forEach((name) => {
-    global[name] = global[name.toLowerCase()] = function (str, fn) {
+    global[name] = function (str, fn) {
       testFn(`${name}${separator} ${str}`, fn);
     };
 
