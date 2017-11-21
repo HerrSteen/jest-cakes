@@ -1,23 +1,22 @@
 {
-  "name": "jasmine-cakes",
-  "version": "1.0.0",
+  "name": "jest-cakes",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "jest-cakes.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HerrSteen/jasmine-cakes.git"
+    "url": "git+https://github.com/HerrSteen/jest-cakes.git"
   },
   "author": "Pastor Steen <pastor.steen@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HerrSteen/jasmine-cakes/issues"
+    "url": "https://github.com/HerrSteen/jest-cakes/issues"
   },
-  "homepage": "https://github.com/HerrSteen/jasmine-cakes#readme",
+  "homepage": "https://github.com/HerrSteen/jest-cakes#readme",
   "devDependencies": {
-    "jasmine": "^2.8.0",
     "jest": "^21.2.1"
   }
 }
