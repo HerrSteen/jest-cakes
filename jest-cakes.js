@@ -24,5 +24,9 @@ const createFn = (testFn, arr) => {
   });
 };
 
-createFn(describe, describes);
-createFn(test, tests);
+try {
+  createFn(describe, describes);
+  createFn(test, tests);
+} catch(e) {
+  console.log("jest-cakes:", e);
+}
