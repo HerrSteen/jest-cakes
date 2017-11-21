@@ -1,10 +1,10 @@
 require("../jest-cakes");
 
-describe("jest-cakes", () => {
+Feature("jest-cakes", () => {
   Scenario("Test functions are available in global scope", () => {
     let incement;
 
-    Given("Increment is set", () => {
+    given("Increment is set", () => {
       increment = 0
     });
 

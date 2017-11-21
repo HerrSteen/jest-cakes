@@ -1,17 +1,26 @@
 "use strict";
 
 //loop
-const describes = ["Scenario"];
+const describes = [
+  "Scenario",
+  "Feature",
+  "scenario",
+  "feature"
+];
 const tests = [
   "Given",
   "When",
   "Then",
-  "And"
+  "And",
+  "given",
+  "when",
+  "then",
+  "and"
 ];
 
 const createFn = (testFn, arr) => {
   arr.forEach((name) => {
-    global[name] = function (str, fn) {
+    global[name] = global[name.toLowerCase()] = function (str, fn) {
       testFn(`${name}: ${str}`, fn);
     };
 
