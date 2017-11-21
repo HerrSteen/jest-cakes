@@ -4,23 +4,23 @@ Feature("jest-cakes", () => {
   Scenario("Test functions are available in global scope", () => {
     let incement;
 
-    given("Increment is set", () => {
+    Given("increment is set", () => {
       increment = 0
     });
 
-    When("Incement is increased", () => {
+    When("incement is increased", () => {
       increment++;
     });
 
-    Then("Expect increment to be one", () => {
+    Then("we expect increment to be one", () => {
       expect(increment).toBe(1);
     });
 
-    When.skip("Increment is decreased ", () => {
+    When.skip("increment is decreased ", () => {
       increment--;
     });
 
-    Then("Increment should still be one", () => {
+    Then("increment should still be one", () => {
       expect(increment).toBe(1);
     });
   });

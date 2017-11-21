@@ -1,6 +1,5 @@
 "use strict";
 
-//loop
 const describes = [
   "Scenario",
   "Feature",
@@ -18,25 +17,25 @@ const tests = [
   "and"
 ];
 
-const createFn = (testFn, arr) => {
+const createFn = (testFn, arr, separator) => {
   arr.forEach((name) => {
     global[name] = global[name.toLowerCase()] = function (str, fn) {
-      testFn(`${name}: ${str}`, fn);
+      testFn(`${name}${separator} ${str}`, fn);
     };
 
     global[name].skip = function (str, fn) {
-      testFn.skip(`${name}: ${str}`, fn);
+      testFn.skip(`${name}${separator} ${str}`, fn);
     };
 
     global[name].only = function (str, fn) {
-      testFn.only(`${name}: ${str}`, fn);
+      testFn.only(`${name}${separator} ${str}`, fn);
     };
   });
 };
 
 try {
-  createFn(describe, describes);
-  createFn(test, tests);
+  createFn(describe, describes, ":");
+  createFn(test, tests, "");
 } catch(e) {
   console.log("jest-cakes:", e);
 }
