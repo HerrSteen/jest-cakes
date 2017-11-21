@@ -12,7 +12,7 @@ npm install --save-dev jest-cakes
 ```
 
 ## Usage
-```
+```js
 require("../jest-cakes");
 
 Scenario("Feature test", () => {
