@@ -1,5 +1,4 @@
 # Jest-cakes
-[![Build Status](https://travis-ci.org/HerrSteen/jest-cakes.svg?branch=master)](https://travis-ci.org/HerrSteen/jest-cakes)
 
 What [Mocha-cakes](https://github.com/iensu/mocha-cakes-2) is for Mocha. Jest-cakes is for Jest.
 
